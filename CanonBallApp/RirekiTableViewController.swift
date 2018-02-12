@@ -38,15 +38,15 @@ class RirekiTableViewController: UIViewController, UITableViewDelegate, UITableV
         self.tableview?.register(UINib(nibName: "RirekiTableViewCell", bundle: nil), forCellReuseIdentifier: "rirekiTableViewCell")
         
         // 自作のオブジェクトはData型に変換しないとUserDefaultsに出し入れできない
-        if  let storedData = UserDefaults.standard.object(forKey:"rireki") as? Data {
+        if  let storedData = UserDefaults.standard.object(forKey:Const.Udkey.RIREKI) as? Data {
             // deserializing
             if let convert = NSKeyedUnarchiver.unarchiveObject(with: storedData) as? Array<RirekiEntity> {
                 rirekiAray = convert
             }
         }
         
-        if UserDefaults.standard.object(forKey:"myPoint") != nil {
-            myPoint = UserDefaults.standard.object(forKey:"myPoint") as! Int
+        if UserDefaults.standard.object(forKey:Const.Udkey.MYPOINT) != nil {
+            myPoint = UserDefaults.standard.object(forKey:Const.Udkey.MYPOINT) as! Int
             dispPoint.text = "\(myPoint)"
         }
         
@@ -54,7 +54,6 @@ class RirekiTableViewController: UIViewController, UITableViewDelegate, UITableV
         let back = UIImage(named: "back.png")!.withRenderingMode(UIImageRenderingMode.alwaysOriginal)
         
         backIcon.image = back
-        
         
     }
 
@@ -130,9 +129,7 @@ class RirekiTableViewController: UIViewController, UITableViewDelegate, UITableV
 
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
-        // セル選択時の選択色をなくす
-        tableview.deselectRow(at: indexPath as IndexPath, animated: true)
+        // セルのタップイベント
     }
     
     // セルを編集するメソッド
@@ -143,9 +140,9 @@ class RirekiTableViewController: UIViewController, UITableViewDelegate, UITableV
             rirekiAray.remove(at: order)
             
             // ここに減点処理を入れる
-            var myPoint = UserDefaults.standard.object(forKey:"myPoint") as! Int
+            var myPoint = UserDefaults.standard.object(forKey:Const.Udkey.MYPOINT) as! Int
             myPoint -= rirekiPoint[indexPath.row]
-            UserDefaults.standard.set(myPoint, forKey: "myPoint")
+            UserDefaults.standard.set(myPoint, forKey: Const.Udkey.MYPOINT)
             dispPoint.text = "\(myPoint)"
             
             // 配列を削除する
@@ -153,11 +150,13 @@ class RirekiTableViewController: UIViewController, UITableViewDelegate, UITableV
             
             // serializing
             let archiveData = NSKeyedArchiver.archivedData(withRootObject: rirekiAray)
-            UserDefaults.standard.set(archiveData, forKey: "rireki")
+            UserDefaults.standard.set(archiveData, forKey: Const.Udkey.RIREKI)
             
             tableview.reloadData()
         }
         
     }
+    
+    
 
 }

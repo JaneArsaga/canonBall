@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C705182820315CEC003F86F3 /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = C705182720315CEC003F86F3 /* Const.swift */; };
 		C719C51C1F42C0D200CD1834 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C719C51B1F42C0D200CD1834 /* AppDelegate.swift */; };
 		C719C5211F42C0D200CD1834 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C719C51F1F42C0D200CD1834 /* Main.storyboard */; };
 		C719C5241F42C0D200CD1834 /* CanonBallApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C719C5221F42C0D200CD1834 /* CanonBallApp.xcdatamodeld */; };
@@ -50,13 +51,13 @@
 		C77FD6971F5BF99500BEF89A /* pcb_icon_05.png in Resources */ = {isa = PBXBuildFile; fileRef = C77FD6921F5BF99500BEF89A /* pcb_icon_05.png */; };
 		C77FD6981F5BF99500BEF89A /* pcb_icon01.png in Resources */ = {isa = PBXBuildFile; fileRef = C77FD6931F5BF99500BEF89A /* pcb_icon01.png */; };
 		C77FD69A1F5BFBCE00BEF89A /* pcb_icon_03.png in Resources */ = {isa = PBXBuildFile; fileRef = C77FD6991F5BFBCE00BEF89A /* pcb_icon_03.png */; };
-		C77FD69C1F5C134F00BEF89A /* pcb_icon_120s.png in Resources */ = {isa = PBXBuildFile; fileRef = C77FD69B1F5C134F00BEF89A /* pcb_icon_120s.png */; };
 		C7B82CD51F42D90D00B9CADE /* TopTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B82CD41F42D90D00B9CADE /* TopTableViewController.swift */; };
 		C7B82CD81F42E17800B9CADE /* BonusPointTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B82CD61F42E17800B9CADE /* BonusPointTableViewCell.swift */; };
 		C7B82CD91F42E17800B9CADE /* BonusPointTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7B82CD71F42E17800B9CADE /* BonusPointTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C705182720315CEC003F86F3 /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
 		C719C5181F42C0D200CD1834 /* CanonBallApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CanonBallApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C719C51B1F42C0D200CD1834 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C719C5201F42C0D200CD1834 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -102,7 +103,6 @@
 		C77FD6921F5BF99500BEF89A /* pcb_icon_05.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pcb_icon_05.png; sourceTree = "<group>"; };
 		C77FD6931F5BF99500BEF89A /* pcb_icon01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pcb_icon01.png; sourceTree = "<group>"; };
 		C77FD6991F5BFBCE00BEF89A /* pcb_icon_03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pcb_icon_03.png; sourceTree = "<group>"; };
-		C77FD69B1F5C134F00BEF89A /* pcb_icon_120s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pcb_icon_120s.png; sourceTree = "<group>"; };
 		C7B82CD41F42D90D00B9CADE /* TopTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TopTableViewController.swift; path = ../TopTableViewController.swift; sourceTree = "<group>"; };
 		C7B82CD61F42E17800B9CADE /* BonusPointTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BonusPointTableViewCell.swift; sourceTree = "<group>"; };
 		C7B82CD71F42E17800B9CADE /* BonusPointTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BonusPointTableViewCell.xib; sourceTree = "<group>"; };
@@ -138,6 +138,7 @@
 		C719C51A1F42C0D200CD1834 /* CanonBallApp */ = {
 			isa = PBXGroup;
 			children = (
+				C705182720315CEC003F86F3 /* Const.swift */,
 				C719C51B1F42C0D200CD1834 /* AppDelegate.swift */,
 				C7B82CD61F42E17800B9CADE /* BonusPointTableViewCell.swift */,
 				C7B82CD41F42D90D00B9CADE /* TopTableViewController.swift */,
@@ -153,7 +154,6 @@
 				C719C52A1F42C0D200CD1834 /* Info.plist */,
 				C719C5221F42C0D200CD1834 /* CanonBallApp.xcdatamodeld */,
 				C77FD6741F5BA35300BEF89A /* loading_bk.jpg */,
-				C77FD69D1F5C136D00BEF89A /* AppIcon120*120 */,
 				C77FD68E1F5BF96600BEF89A /* AppIcon180*180 */,
 				C77FD6611F5B948B00BEF89A /* icon */,
 				C7B82CE01F44C1FE00B9CADE /* img */,
@@ -185,14 +185,6 @@
 				C77FD6921F5BF99500BEF89A /* pcb_icon_05.png */,
 			);
 			name = "AppIcon180*180";
-			sourceTree = "<group>";
-		};
-		C77FD69D1F5C136D00BEF89A /* AppIcon120*120 */ = {
-			isa = PBXGroup;
-			children = (
-				C77FD69B1F5C134F00BEF89A /* pcb_icon_120s.png */,
-			);
-			name = "AppIcon120*120";
 			sourceTree = "<group>";
 		};
 		C7B82CE01F44C1FE00B9CADE /* img */ = {
@@ -320,7 +312,6 @@
 				C77FD6521F5B337700BEF89A /* 6pt.png in Resources */,
 				C77FD6601F5B337700BEF89A /* m10pt.png in Resources */,
 				C77FD64D1F5B337700BEF89A /* 1pt.png in Resources */,
-				C77FD69C1F5C134F00BEF89A /* pcb_icon_120s.png in Resources */,
 				C77FD6961F5BF99500BEF89A /* pcb_icon_04.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -337,6 +328,7 @@
 				C77FD6241F49849400BEF89A /* RirekiTableViewController.swift in Sources */,
 				C719C5241F42C0D200CD1834 /* CanonBallApp.xcdatamodeld in Sources */,
 				C7B82CD51F42D90D00B9CADE /* TopTableViewController.swift in Sources */,
+				C705182820315CEC003F86F3 /* Const.swift in Sources */,
 				C719C51C1F42C0D200CD1834 /* AppDelegate.swift in Sources */,
 				C77FD62C1F4999FB00BEF89A /* RirekiEntity.swift in Sources */,
 			);
@@ -465,6 +457,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = A4L75LJQBL;
 				INFOPLIST_FILE = CanonBallApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.eglab.CanonBallApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -478,6 +471,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = A4L75LJQBL;
 				INFOPLIST_FILE = CanonBallApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.eglab.CanonBallApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -8,8 +8,6 @@
 
 import Foundation
 
-
-
 class RirekiEntity :NSObject, NSCoding {
 
     var yyyymmdd: String = ""

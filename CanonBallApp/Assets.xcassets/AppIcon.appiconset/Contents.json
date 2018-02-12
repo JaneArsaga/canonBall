@@ -39,7 +39,7 @@
     {
       "size" : "60x60",
       "idiom" : "iphone",
-      "filename" : "pcb_icon_120s.png",
+      "filename" : "pcb_icon_03-6.png",
       "scale" : "2x"
     },
     {
@@ -101,6 +101,11 @@
       "idiom" : "ipad",
       "filename" : "pcb_icon_03-16.png",
       "scale" : "2x"
+    },
+    {
+      "idiom" : "ios-marketing",
+      "size" : "1024x1024",
+      "scale" : "1x"
     }
   ],
   "info" : {
